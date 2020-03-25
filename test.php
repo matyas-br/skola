@@ -12,11 +12,7 @@ and open the template in the editor.
     <body>
     
     <h2>AHOJ</h2>
-    
-        <?php
-    
-        phpinfo()
-        ?>
+ 
  
     </body>
 </html>
