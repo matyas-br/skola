@@ -1,0 +1,109 @@
+<?php
+class numbersBraun{
+    static public function roundBraun($rounded) {
+        return round($rounded);
+        
+    }
+   static public function ceilBraun($roundedN) {
+       return ceil($roundedN);
+   }
+   static public function floorBraun($roundedD) {
+       return floor($roundedD);
+   }
+   static public function sqrtBraun($dOdmocnina) {
+       return sqrt($dOdmocnina);
+   }
+   static public function powBraun($mocnina,$mocnitel) {
+       return pow($mocnina, $mocnitel);
+   }
+   static public function sinBraun($angle) {
+       return sin($angle);
+   }
+   static public function cosBraun($angle) {
+       return cos($angle);
+}
+static public function tanBraun($angle) {
+       return tan($angle);
+}
+static public function asinBraun($fromNumtoAng) {
+       return asin($fromNumtoAng);
+   }
+   static public function acosBraun($fromNumtoAng) {
+       return acos($fromNumtoAng);
+}
+static public function atanBraun($fromNumtoAng) {
+       return atan($fromNumtoAng);
+}
+static public function fmodBraun($basis,$deli) {
+    return fmod($basis, $deli);
+}
+static public function maxBraun($field) {
+    return max($field);
+}
+static public function minBraun($field) {
+    return min($field);
+}
+static public function absBraun($absNumber) {
+    return abs($absNumber);
+}
+static public function odecitaniBraun($a,$b) {
+    return $a-$b;
+}
+static public function scitaniBraun($a,$b) {
+    return $a+$b;
+}
+static public function deleniBraun($a,$b) {
+    return $a/$b;
+}
+static public function nasobeniBraun($a,$b) {
+    return $a*$b;
+}
+static public function number_formatBraun($formats) {
+    return number_format($formats);
+}
+}
+$rounded = 4.20;
+$roundedN = 10.15;
+$roundedD = 1.80;
+$dOdmocnina = 25;
+$mocnina = 5;
+$mocnitel = 2;
+$angle = 180;
+$fromNumtoAng = 90;
+$basis = 40;
+$deli = 5;
+$field  = array ('10','40','60','80','100','120','160','250','690');
+$absNumber = 5.13;
+$a = 10;
+$b = 5;
+$formats = 5;
+var_dump(numbersBraun::roundBraun($rounded)); 
+var_dump(numbersBraun::ceilBraun($roundedN));
+var_dump(numbersBraun::floorBraun($roundedD));
+var_dump(numbersBraun::sqrtBraun($dOdmocnina));
+var_dump(numbersBraun::powBraun($mocnina, $mocnitel));
+var_dump(numbersBraun::sinBraun($angle));
+var_dump(numbersBraun::cosBraun($angle));
+var_dump(numbersBraun::tanBraun($angle));
+var_dump(numbersBraun::asinBraun($fromNumtoAng));
+var_dump(numbersBraun::acosBraun($fromNumtoAng));
+var_dump(numbersBraun::atanBraun($fromNumtoAng));
+var_dump(numbersBraun::fmodBraun($basis, $deli));
+var_dump(numbersBraun::maxBraun($field));
+var_dump(numbersBraun::minBraun($field));
+var_dump(numbersBraun::absBraun($absNumber));
+var_dump(numbersBraun::odecitaniBraun($a, $b));
+var_dump(numbersBraun::scitaniBraun($a, $b));
+var_dump(numbersBraun::deleniBraun($a, $b));
+var_dump(numbersBraun::nasobeniBraun($a, $b));
+var_dump(numbersBraun::number_formatBraun($formats));
+
+
+/*
+ *Dodavam vam ukol, omlouvám se ze to trvalo tak dlouho. 
+ * 
+ * @autor Matyas Braun
+ */
+
+?>
+
