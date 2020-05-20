@@ -1,0 +1,136 @@
+<?php
+class stringBraun {
+    // substr - cast retezce je vypsána
+    static public function substrBraun($retezec,$whereZ) {
+        return substr($retezec, $whereZ);
+}
+// v retezci vklada na prislusne misto string
+static public function substr__replaceBraun($text,$coCH,$zacit) {
+   return substr_replace($text, $coCH, $zacit);
+}
+//v retezci nahrazuje slovo
+static public function strtrBraun($veta,$whatNA,$jakyCH) {
+    return strtr($veta, $whatNA, $jakyCH);
+}
+//vsechno bude psano velkym pismem
+static public function strtoupperBraun($everythingH) {
+    return strtoupper($everythingH);
+}
+//vse bude malym pismem
+static public function strtolowerBraun($everythingS) {
+    return strtolower($everythingS);
+}
+//v retezci najde pozadovany retez posledni moznost
+static public function strrposBraun($whereFind,$whatFind) {
+    return strrpos($whereFind, $whatFind);
+}
+//presne zadany string se nam vyhleda
+static public function strriposBraun($whereFind,$presnehledani) {
+   return strripos($whereFind, $presnehledani); 
+}
+//v retezci nalezne prvni shodu co hledam
+static public function strposBraun($whereFind,$whatFind) {
+    return strpos($whereFind, $whatFind);
+}
+//vypisuje retezcovou delku
+static public function strlenBraun($riciL) {
+    return strlen($riciL);
+}
+//co heldam to najdu
+static public function strchrBraun($whereFind,$whatFind) {
+    return strchr($whereFind, $whatFind);
+}
+// nahradi/vyjme promenne v poli
+static public function str_replaceBraun($soloHL,$vtom,$here) {
+   return str_replace($soloHL, $vtom, $here);
+}
+// slovo se nam zasifruje
+static public function md5Braun($msng) {
+    return md5($msng);
+}
+//vklada do pole neco
+static public function implodeBraun($coo,$kdee ){
+    return implode($coo, $kdee);
+}
+//rozdeluje na substringy
+static public function explodeBraun($hranice,$strS) {
+    return explode($hranice, $strS);
+}
+//prida slash pred urcite charaktery
+static public function addcslashesBraun($vtomS,$rozzs) {
+    return addcslashes($vtomS, $rozzs);
+}
+//vklad vety do backslash
+static public function addslashBraun($strS) {
+    return addslashes($strS);
+}
+// nevhodne vety jsou odebrany z retezce
+static public function trimBraun($ven,$tP) {
+    return trim($ven, $tP);
+}
+//Jen prvni pismeno bude velke
+static public function ucfirstBraun($veta) {
+    return ucfirst($veta);
+}
+//Vsechno bude velkym pismem
+static public function ucwordsBraun($veta) {
+    return ucwords($veta);
+}
+
+}//definujeme nove promenne
+$retezec = "12312sa1d2a1sd2a4sd85";
+$whereZ =10;
+$text="Vcera jsem byl s pritelkyni";
+$coCH="slowly";
+$zacit= 30;
+$veta="mam rad maso";
+$whatNA ="vendulka";
+$jakyCH="ptkadeti";
+$everythingH="Mam rad anglicky jazyk";
+$everythingS="MATEMATIKA JE TEZKA";
+$whereFind ="6969asdasdasds1";
+$whatFind= "69";
+$presnehledani="das";
+$riciL= "Tyhle prazdniny si chci vydelat balikos.";
+$soloHL= array ('a','e','i','o','u','y');
+$vtom="";
+$here="Dnes bohuzel prsi";
+$msng= "jsi dead";
+$coo=",";
+$kdee= array ('email','telefon','jmeno','prijmeni');
+$hranice = '""';
+$strS="plejtvak velryba zralok";
+$vtomS="Cus, jdeeem ven?";
+$rozzs= 'A..z';
+$out="\a\aMatyas Braun\a\a";
+$tP="\a";
+//funkci vypíše pomoci var_dump ktere jsou nadefinovane v class
+var_dump(stringBraun::substrBraun($retezec, $whereZ));
+var_dump(stringBraun::substr__replaceBraun($text, $coCH, $zacit));
+var_dump(stringBraun::strtrBraun($string, $whatNA, $jakyCH));
+var_dump(stringBraun::strtoupperBraun($everythingH));
+var_dump(stringBraun::strtolowerBraun($everythingS));
+var_dump(stringBraun::strrposBraun($whereFind, $whatFind));
+var_dump(stringBraun::strriposBraun($whereFind, $presnehledani));
+var_dump(stringBraun::strposBraun($whereFind, $whatFind));
+var_dump(stringBraun::strlenBraun($riciL));
+var_dump(stringBraun::strchrBraun($whereFind, $whatFind));
+var_dump(stringBraun::str_replaceBraun($soloHL, $vtom, $here));
+var_dump(stringBraun::md5Braun($msng));
+var_dump(stringBraun::implodeBraun($coo, $kdee));
+var_dump(stringBraun::explodeBraun($hranice, $strS));
+var_dump(stringBraun::addcslashesBraun($vtomS, $rozzs));
+var_dump(stringBraun::addslashBraun($strS));
+var_dump(stringBraun::trimBraun($ven, $tP));
+var_dump(stringBraun::ucfirstBraun($veta));
+var_dump(stringBraun::ucwordsBraun($veta));
+
+/*
+ *Dodavam vam ukol, omlouvám se ze to trvalo tak dlouho. 
+ * 
+ * @autor Matyas Braun
+ */
+
+
+?>
+
