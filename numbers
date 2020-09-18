@@ -1,1 +1,160 @@
 
+<?php
+
+$uhel = 20;
+$zcislanauhel = 38;
+$zaklad = 50 ;
+$delitel = 5;
+$pole  = array ('100','2','7O', '30', '80', '360');
+$abscislo = 37.82;
+$a = 4;
+$b = 9;
+$formatuje = 20;
+$zaokrouhli = 8.55;
+$zaokrouhlinahoru = 2.55;
+$zaokrouhlidolu = 5.75;
+$druhaodmocnina = 7;
+$mocnina = 5;
+$mocnitel = 2;
+
+
+
+class numbersMBraun
+{
+    static public function roundMBraun($zaokrouhli)
+    {
+        return round($zaokrouhli);
+    }
+
+
+    static public function ceilTsohla($zaokrouhlinahoru)
+    {
+        return ceil($zaokrouhlinahoru);
+    }
+
+
+    static public function floorMBraun($zaokrouhlidolu)
+    {
+        return floor($zaokrouhlidolu);
+    }
+
+    static public function sqrtMBraun($druhaodmocnina)
+    {
+        return sqrt($druhaodmocnina);
+    }
+
+
+    static public function powMBraun($mocnina,$mocnitel)
+    {
+        return pow($mocnina, $mocnitel);
+    }
+
+    static public function sinMBraun($uhel)
+    {
+        return sin($uhel);
+    }
+
+    static public function cosMBraun($uhel)
+    {
+        return cos($uhel);
+    }
+
+
+    static public function tanMBraun($uhel)
+    {
+        return tan($uhel);
+    }
+
+
+    static public function asinMBraun($zcislanauhel)
+    {
+        return asin($zcislanauhel);
+    }
+
+    static public function acosMBraun($zcislanauhel)
+    {
+        return acos($zcislanauhel);
+    }
+
+
+    static public function atanMBraun($zcislanauhel)
+    {
+        return atan($zcislanauhel);
+    }
+
+
+    static public function fmodMBraun($zaklad,$delitel)
+    {
+        return fmod($zaklad, $delitel);
+    }
+
+
+    static public function maxMBraun($pole)
+    {
+        return max($pole);
+    }
+
+    static public function minMBraun($pole)
+    {
+        return min($pole);
+    }
+
+
+    static public function absMBraun($abscislo)
+    {
+        return abs($abscislo);
+    }
+
+
+    static public function odecitaniMBraun($a,$b)
+    {
+        return $a-$b;
+    }
+
+    static public function scitaniMBraun($a,$b)
+    {
+        return $a+$b;
+    }
+
+
+    static public function deleniMBraun($a,$b)
+    {
+        return $a/$b;
+    }
+
+    static public function nasobeniMBraun($a,$b)
+    {
+        return $a*$b;
+    }
+
+
+    static public function number_formatMBraun($formatuje)
+    {
+        return number_format($formatuje);
+    }
+
+}
+
+
+var_dump(numbersMBraun::roundMBraun($zaokrouhli));
+var_dump(numbersMBraun::ceilMBraun($zaokrouhlinahoru));
+var_dump(numbersMBraun::floorMBraun($zaokrouhlidolu));
+var_dump(numbersMBraun::sqrtMBraun($druhaodmocnina));
+var_dump(numbersMBraun::powMBraun($mocnina, $mocnitel));
+var_dump(numbersMBraun::sinMBraun($uhel));
+var_dump(numbersMBraun::cosMBraun($uhel));
+var_dump(numbersMBraun::tanMBraun($uhel));
+var_dump(numbersMBraun::asinMBraun($zcislanauhel));
+var_dump(numbersMBraun::acosMBraun($zcislanauhel));
+var_dump(numbersMBraun::atanMBraun($zcislanauhel));
+var_dump(numbersMBraun::fmodMBraun($zaklad, $delitel));
+var_dump(numbersMBraun::maxMBraun($pole));
+var_dump(numbersMBraun::minMBraun($pole));
+var_dump(numbersMBraun::absMBraun($abscislo));
+var_dump(numbersMBraun::odecitaniMBraun($a, $b));
+var_dump(numbersMBraun::scitaniMBraun($a, $b));
+var_dump(numbersMBraun::deleniMBraun($a, $b));
+var_dump(numbersMBraun::nasobeniMBraun($a, $b));
+var_dump(numbersMBraun::number_formatMBraun($formatuje));
+
+?>
