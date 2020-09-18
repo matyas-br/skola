@@ -27,7 +27,7 @@ class numbersMBraun
     }
 
 
-    static public function ceilTsohla($zaokrouhlinahoru)
+    static public function ceilMBraun($zaokrouhlinahoru)
     {
         return ceil($zaokrouhlinahoru);
     }
